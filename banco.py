@@ -26,7 +26,7 @@ class Conta:
         print('Extrato CC Nº %s' % self.número)
         for op in self.operacoes:
             print('%10s %10.2f' % (op[0], op[1]))
-        print('%10s %10.2f\n' % ('Saldo=', self.saldo))
+        print('%10s %10.2f\n' % ('Saldo:', self.saldo))
 
 class ContaEspecial(Conta): # Essa classe está herdando a classe 'Conta'
     def __init__(self, clientes, número, saldo=0, limite=0):

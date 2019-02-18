@@ -22,8 +22,8 @@ class Account:
         self.digit = digit
         
     def summary(self):
-        print('CC Number: ', self.account_number, '\n', 'CC agency:', self.account_agency)
-        print('Digit: ', self.digit, '\n', 'Balance: ', self.balance)
+        print('ACC Number: ', self.account_number, '\n', 'ACC agency:', self.account_agency, 'Digit: ', self.digit, '\n',
+            'Balance:', self.balance)
     def sake(self, value):
         if self.balance >= value:
             self.balance -= value
